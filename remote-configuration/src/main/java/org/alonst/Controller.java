@@ -19,4 +19,9 @@ public class Controller {
     public JsonNode getConfigMap(@PathVariable("name") String configMapName) {
         return configMapsProvider.get(configMapName);
     }
+
+    @GetMapping("alonst/{name}")
+    public JsonNode getConfigMap(@PathVariable("name") String configMapName) {
+        return configMapsProvider.get(configMapName);
+    }
 }
